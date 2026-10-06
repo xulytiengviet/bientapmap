@@ -40,7 +40,11 @@ Sau đó mở `http://localhost:8080`.
 
 ## GitHub Pages
 
-Workflow `.github/workflows/pages.yml` sẽ triển khai static site khi push lên `main`. URL dự kiến:
+Workflow `.github/workflows/pages.yml` triển khai static site từ nhánh `main`.
+
+**Lần đầu với repository mới:** GitHub có thể không cho `GITHUB_TOKEN` tự tạo Pages site và báo `Resource not accessible by integration`. Khi đó vào **Settings → Pages → Build and deployment → Source → GitHub Actions**, sau đó chạy lại workflow **Deploy static site to Pages**. Đây là thao tác kích hoạt một lần ở cấp repository.
+
+URL sau khi Pages được kích hoạt:
 
 `https://xulytiengviet.github.io/bientapmap/`
 
